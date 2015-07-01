@@ -1,4 +1,6 @@
-![GeneralAssemb.ly](https://github.com/generalassembly/ga-ruby-on-rails-for-devs/raw/master/images/ga.png "GeneralAssemb.ly")(set phasers to stun)
+#My First Video Game
+
+<br>
 
 ##Phaser JS
 
@@ -39,7 +41,7 @@ To discover some of the possibilites of phaser take a few minutes and play...
 
 ####"because you are what you eat, but sometimes you are what eats you."
 
-Reincarnage is a WDI project of your fellow GA students.
+Reincarnage is a phaser game made by a me and a friend. It too was our first phaser game. 
 [play it here](http://reincarnage.herokuapp.com)
 
 
@@ -649,13 +651,11 @@ if (cursors.up.isDown) {
 
 Check out [phaser.io](http://phaser.io) to see some cool examples of what you can make using Phaser.
 
-Also check out [Rick Rampage](http://http://rickrampage.herokuapp.com/)  ([github](https://github.com/cptnmrgn/rick_rampage)) and [Wizurds](http://abroccoli.github.io/first-phaser-final/) ([github](https://github.com/abroccoli/first-phaser-final)), two other phaser games created by GA WDI students.
-
 ##Reincarnage
 
 As seen at [NYC Games Forum: August Demo Night '15](http://www.eventbrite.com/e/nyc-games-forum-august-demo-night-tickets-12470538717)
 
-View the Project 3 code on [Github](https://github.com/keyanbagheri/reincarnage)
+View the code on [Github](https://github.com/keyanbagheri/reincarnage)
 
 Created by: [Keyan Bagheri](https://github.com/keyanbagheri) & [Ben Ticsay](https://github.com/benticsay)
 
@@ -665,4 +665,4 @@ Illustrations by: [Kathy Geisel](http://www.kathygeisel.com/)
 
 <br>
 
-![fly](public/images/fly.png) `Notes by: Keyan Bagheri - 06/30/2015`![fly](public/images/fly.png) 
+![fly](public/images/fly.png) Tutorial by: [Keyan Bagheri](http://keyanbagheri.com) - 7/1/2015![fly](public/images/fly.png) 
