@@ -62,13 +62,13 @@ Reincarnage is a phaser game made by a me and a friend. It too was our first pha
 	
 2. In your terminal CD into the game folder
 	
-	`/reincarnage_phaser_app`
+	`/my_first_phaser_game`
 	
 3. Type the following command:
 
 	`ruby game.rb`
 	
-4. Now in your browser (Google Chrome specificly) inter the following path:
+4. Now in your browser (Google Chrome specifically) inter the following path:
 	
 	`localhost:4567`
 	
@@ -348,7 +348,7 @@ Placing an invisible line can be hard... so I suggest first using a clearly visi
 
 ```js
 //We load a purple line for our placeholder
-game.load.image('purp_line', 'images/purp_line.png');
+game.load.image('line', 'images/purp_line.png');
 ```
 
 ####Create:
@@ -377,7 +377,7 @@ Now that we have our ledge positioned where we want it, we can switch from that 
 
 ```js
 //We now load a blank line for our placeholder
-game.load.image('purp_line', 'images/blank_line.png');
+game.load.image('line', 'images/blank_line.png');
 ```
 
 ###![fly](public/images/fly.png) "See frog sit"
