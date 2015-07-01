@@ -1,0 +1,1059 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>README</title>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+<style type="text/css">
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
+</head>
+<body>
+<p><img src="https://github.com/generalassembly/ga-ruby-on-rails-for-devs/raw/master/images/ga.png" alt="GeneralAssemb.ly" title="GeneralAssemb.ly">(set phasers to stun)</p>
+
+<h2 id="toc_0">Phaser JS</h2>
+
+<h4 id="toc_1">You will learn to:</h4>
+
+<ol>
+<li>Create a game in PhaserJS</li>
+<li>Import assets</li>
+<li>Display and resize images/sprites</li>
+<li>Play audio</li>
+<li>Add physics to objects in the game
+
+<ul>
+<li>Gravity</li>
+<li>Velocity</li>
+<li>Bounce</li>
+</ul></li>
+<li>Creat collision handlers</li>
+<li>Set up controls</li>
+<li>Animate sprites</li>
+<li>Impress your friends</li>
+<li>Win at life</li>
+</ol>
+
+<p><br></p>
+
+<h2 id="toc_2">About Phaser</h2>
+
+<p>Phaser is a javascript library that makes it easy for us to create interactive video games in HTML.</p>
+
+<p>No styling inside of the game is done with CSS. Instead you would load pre-made images (or sprites) and interact with them in HTML through Phaser.</p>
+
+<p>Phaser is pretty basic compared with some of the better known gaming frameworks (impact, unreal, unity) but it is simple enough for us to make a pretty cool game very quickly. And we can win with Phaser since it&#39;s written in javascript and we already have high scores in javascript.</p>
+
+<p><br></p>
+
+<hr>
+
+<hr>
+
+<p>To discover some of the possibilites of phaser take a few minutes and play...</p>
+
+<p><a href="http://reincarnage.herokuapp.com"><img src="public/images/logo.png" alt="reincarnage"></a></p>
+
+<h4 id="toc_3">&quot;because you are what you eat, but sometimes you are what eats you.&quot;</h4>
+
+<p>Reincarnage is a WDI project of your fellow GA students.
+<a href="http://reincarnage.herokuapp.com">play it here</a></p>
+
+<hr>
+
+<hr>
+
+<h1 id="toc_4">Today we are going recreate Level 3 of Reincarnage...</h1>
+
+<h2 id="toc_5">SETUP</h2>
+
+<h4 id="toc_6">To run the game:</h4>
+
+<ol>
+<li><p>Make sure you have sinatra and sinatra-reloader gems installed:</p>
+
+<p><code>gem install sinatra</code></p>
+
+<p><code>gem install sinatra-reloader</code></p></li>
+<li><p>In your terminal CD into the game folder</p>
+
+<p><code>/reincarnage_phaser_app</code></p></li>
+<li><p>Type the following command:</p>
+
+<p><code>ruby game.rb</code></p></li>
+<li><p>Now in your browser (Google Chrome specificly) inter the following path:</p>
+
+<p><code>localhost:4567</code></p></li>
+</ol>
+
+<h2 id="toc_7"></h2>
+
+<h1 id="toc_8">Let&#39;s begin to set up our level...</h1>
+
+<h6 id="toc_9">We will be working exclusively in the file <code>/public/javascripts/app.js</code></h6>
+
+<h3 id="toc_10">What we start with.</h3>
+
+<p>Below we call a new Game instance and choose our canvas pixel size (1024, 768). After this we set our phaser physics to AUTO and inject functions for preload, create, and update.</p>
+
+<p>in our <strong><em>app.js</em></strong> file...</p>
+
+<pre><code class="language-javascript">var game = new Phaser.Game(1024, 768, Phaser.AUTO, &#39;&#39;, { preload: preload, create: create, update: update});
+
+function preload() {
+}
+
+function create() {
+}
+
+function update() {
+}</code></pre>
+
+<h1 id="toc_11">The functions...</h1>
+
+<h4 id="toc_12">Preload</h4>
+
+<ul>
+<li>The preload function is where we import all of our assetts before we actually use them. In order for an assett (sprites, images, sounds, etc.) to be used in the game it must first be made available here.</li>
+</ul>
+
+<h4 id="toc_13">Create</h4>
+
+<ul>
+<li>The create method is where we will add anything to our game that should be present UPON LOADING. This includes things like our level&#39;s background, our theme song, assignment of keystroke controls, and any static platforms/images.</li>
+</ul>
+
+<h4 id="toc_14">Update</h4>
+
+<ul>
+<li>The update method is used to control litterally everything else that happens after the game&#39;s initialization. This is where we would create the functionality for new objects to be added to the game, collisions between existing objects, sound effects that occur through game interaction and so much more.</li>
+</ul>
+
+<hr>
+
+<hr>
+
+<h1 id="toc_15">Fly guy <img src="public/images/fly.png" alt="fly"></h1>
+
+<h6 id="toc_16">Whenver you see this symbol ( <img src="public/images/fly.png" alt="fly"> ) it means you should refresh the page in your browser to see your latest cool changes! Let&#39;s refresh the browser now!</h6>
+
+<p><br></p>
+
+<hr>
+
+<hr>
+
+<h5 id="toc_17">When you look at the browser you should see a blank black screen. This screen means that the phaser game is loaded and has created a canvas. This black screen will also be what you will see in the future if you have errors with your phaser code. So I guess for now it is the black screen of life.. but any other time it will be the black screen of death! :-)</h5>
+
+<p>Let&#39;s replace the dark abyss with something a bit more pretty.</p>
+
+<h2 id="toc_18">Chapter 1. The Background</h2>
+
+<p><img src="public/images/background.png" alt="background"></p>
+
+<h4 id="toc_19">Images are preloaded within our <em>preload</em> function like this...</h4>
+
+<pre><code class="language-javascript">function preload(){
+    //we call on our game object and attach an image to it here
+    //the first parameter is the variable name that we will refer to our image &quot;background&quot; and the second parameter is the filename of the image we are loading
+    game.load.image(&#39;background&#39;, &#39;images/background.png&#39;);
+}</code></pre>
+
+<h4 id="toc_20">We can now add the image to our game canvas to make it appear when we start the game. We do this in our <em>create</em> function.</h4>
+
+<pre><code class="language-javascript">function create(){
+//When adding an image we give three parameters.
+//The first is the x-axis position (from the left)
+//the second is y-axis (from the top)
+//and the third is the variable name of our preloaded image.
+var background = game.add.image(0, 0, &#39;background&#39;);
+}</code></pre>
+
+<h6 id="toc_21"><img src="public/images/fly.png" alt="fly"> Refresh the browser and see our background has loaded.</h6>
+
+<h4 id="toc_22">But the size is an issue. Let&#39;s fix it.</h4>
+
+<pre><code class="language-javascript">function create(){
+var background = game.add.image(0, 0, &#39;background&#39;);
+//this will increase our background image size by 87%
+background.scale.x = game.rnd.realInRange(1.87, 1.87);
+background.scale.y = game.rnd.realInRange(1.87, 1.87);
+}</code></pre>
+
+<h3 id="toc_23"><img src="public/images/fly.png" alt="fly"> &quot;Very scenic&quot;</h3>
+
+<h6 id="toc_24">But we lost part of our logmill. Can we move the image over a bit? Of course we can...</h6>
+
+<h4 id="toc_25">Change the x-axis position to -100 to give the image an offset.</h4>
+
+<pre><code class="language-javascript">function create(){
+var background = game.add.image(-100, 0, &#39;background&#39;);
+background.scale.x = game.rnd.realInRange(1.87, 1.87);
+background.scale.y = game.rnd.realInRange(1.87, 1.87);
+}</code></pre>
+
+<h3 id="toc_26"><img src="public/images/fly.png" alt="fly"> &quot;Looking good!&quot;</h3>
+
+<h2 id="toc_27">Chapter 2. The Frog</h2>
+
+<p><img src="public/images/frog.png" alt="frog"></p>
+
+<h4 id="toc_28">Preload:</h4>
+
+<pre><code class="language-javascript">//Loading a spritesheet is like loading an image
+//only in this case we will also specify the pixel width and height as arguments
+game.load.spritesheet(&#39;froggy&#39;, &#39;images/frog.png&#39;, 216, 218);</code></pre>
+
+<h6 id="toc_29">When adding objects to our canvas, we always want to keep order in mind. When you add two images, the one that is added first in the code will always have a lower z-index. So it would be a good idea to have our background added at the very top of our <em>create</em> method.</h6>
+
+<h4 id="toc_30">Create:</h4>
+
+<pre><code class="language-javascript">var background = game.add.image(-100, 0, &#39;background&#39;);
+background.scale.x = game.rnd.realInRange(1.87, 1.87);
+background.scale.y = game.rnd.realInRange(1.87, 1.87);
+
+//Added after our background so that the frog is not hidden by the background
+frog = game.add.sprite(175, 500, &#39;froggy&#39;)</code></pre>
+
+<h3 id="toc_31"><img src="public/images/fly.png" alt="fly"> &quot;See frog&quot;</h3>
+
+<h6 id="toc_32">GREAT SCOTT! That frog is <strong><em>big</em></strong>! Let&#39;s fix that.</h6>
+
+<p><br></p>
+
+<pre><code class="language-javascript">frog = game.add.sprite(175, 500, &#39;froggy&#39;)
+// Let&#39;s make our frog %18 of the size it is now.
+frog.scale.x = game.rnd.realInRange(.18, .18);
+frog.scale.y = game.rnd.realInRange(.18, .18);</code></pre>
+
+<h3 id="toc_33"><img src="public/images/fly.png" alt="fly"> &quot;See frog shrink&quot;</h3>
+
+<p><code>take a minute and play around with the frog&#39;s size</code></p>
+
+<h3 id="toc_34">Enabling physics on our frog object</h3>
+
+<pre><code class="language-javascript">frog = game.add.sprite(175, 500, &#39;froggy&#39;)
+frog.scale.x = game.rnd.realInRange(.18, .18);
+frog.scale.y = game.rnd.realInRange(.18, .18);
+//Pass our frog into our game physics as an argument
+game.physics.arcade.enable(frog);
+//Give our frog downward (positive y-axis) gravity level of 1000
+frog.body.gravity.y = 1000;</code></pre>
+
+<h3 id="toc_35"><img src="public/images/fly.png" alt="fly">  &quot;See frog fall!&quot;</h3>
+
+<p><code>take a minute and play around with the frog&#39;s gravity</code></p>
+
+<h3 id="toc_36">Adding sound!</h3>
+
+<p>Suddenly, and against all probability, a frog has been called into existence in mid air. And since this is not a naturally tenable position for a frog, this innocent creature has very little time to come to terms with it&#39;s identity. This is what it thought as it fell... &quot;Ribbit&quot;</p>
+
+<h6 id="toc_37">Let&#39;s give it a voice to express it&#39;s thoughts.</h6>
+
+<h4 id="toc_38">Preload:</h4>
+
+<pre><code class="language-javascript">//Similar to loading an image
+game.load.audio(&#39;ribbit&#39;, &#39;sounds/ribbit.mp3&#39;);</code></pre>
+
+<h4 id="toc_39">Create:</h4>
+
+<pre><code class="language-javascript">var ribbit = game.add.audio(&#39;ribbit&#39;);
+//Calling javascript&#39;s .play() within our create method will make sounds play the moment that the game begins
+ribbit.play();</code></pre>
+
+<h3 id="toc_40"><img src="public/images/fly.png" alt="fly"> &quot;Hear frog speak&quot;</h3>
+
+<h2 id="toc_41">Chapter 3. The Water</h2>
+
+<p><img src="public/images/water.png" alt="water"></p>
+
+<p>It looks like our frog is falling off of the level. This looks generally janky. Lets fix that by adding an image within our level that our frog can &quot;fall into&quot;.</p>
+
+<h4 id="toc_42">Preload:</h4>
+
+<pre><code class="language-javascript">game.load.image(&#39;water&#39;, &#39;images/water.png&#39;);</code></pre>
+
+<h4 id="toc_43">Create:</h4>
+
+<pre><code class="language-javascript">//Be sure to add our water AFTER we add our frog
+var water = game.add.image(-525, 625, &#39;water&#39;);</code></pre>
+
+<h3 id="toc_44"><img src="public/images/fly.png" alt="fly"> &quot;See frog swim&quot;</h3>
+
+<h2 id="toc_45">Chapter 4. The Rock</h2>
+
+<p><img src="public/images/rock.png" alt="rock"></p>
+
+<p>Our frog keeps getting flashed into existence only to fall into water. This is the some twisted form of recursive waterboard torture, and it needs to stop! </p>
+
+<p><img src="http://ecowatch.com/wp-content/uploads/2012/04/f18.jpg" alt="save the frog"></p>
+
+<p>Let&#39;s give our frog solid ground to stand on.</p>
+
+<h4 id="toc_46">Preload:</h4>
+
+<pre><code class="language-javascript">game.load.image(&#39;rock&#39;, &#39;images/rock.png&#39;);</code></pre>
+
+<h4 id="toc_47">Create:</h4>
+
+<pre><code class="language-javascript">rock = game.add.sprite(105, 560, &#39;rock&#39;);</code></pre>
+
+<p><img src="public/images/fly.png" alt="fly"> If you created the rock AFTER the frog then you probably see the frog falling behind the rock only to emerge again just before hitting the water. This looks super janky. So move the rock above the frog in the code.</p>
+
+<h6 id="toc_48">Now let&#39;s give our rock physics</h6>
+
+<h4 id="toc_49">Create:</h4>
+
+<pre><code class="language-javascript">rock = game.add.sprite(105, 560, &#39;rock&#39;);
+game.physics.arcade.enable(rock);</code></pre>
+
+<h4 id="toc_50">Update:</h4>
+
+<pre><code class="language-javascript">function update(){
+    //Declaring an &quot;on collide&quot; function between two objects that are physics enabled.
+    //We created both our rock and frog variables as global so that we could utilize them within the update function.
+    game.physics.arcade.collide(frog, rock);
+}</code></pre>
+
+<h3 id="toc_51"><img src="public/images/fly.png" alt="fly"> &quot;Frog beats rock?&quot;</h3>
+
+<h6 id="toc_52">That doesn&#39;t sound right. Let&#39;s fix it by making the rock an immovable object</h6>
+
+<h4 id="toc_53">Create:</h4>
+
+<pre><code class="language-javascript">rock = game.add.sprite(105, 560, &#39;rock&#39;);
+game.physics.arcade.enable(rock);
+rock.body.immovable = true;</code></pre>
+
+<h3 id="toc_54"><img src="public/images/fly.png" alt="fly"> &quot;See frog float?&quot;</h3>
+
+<h6 id="toc_55">This too seems wrong. Is this a levitating frog? Is it the messiah reincarnated as an amphibian? Dear God we must fix this janky looking game immediately!</h6>
+
+<h2 id="toc_56">Chapter 5. The invisible ledge</h2>
+
+<p>Sometimes a vector sprite or image has extra invisible space around it. This makes collisions between images appear to occur before they actually touch. When this happens we can solve it by placing an invisible platform directly where we want our collision to happen.</p>
+
+<p>Placing an invisible line can be hard... so I suggest first using a clearly visible line that will be the same size as your invisible one.</p>
+
+<p><img src="public/images/purp_line.png" alt="platform"></p>
+
+<h4 id="toc_57">Preload:</h4>
+
+<pre><code class="language-javascript">//We load a purple line for our placeholder
+game.load.image(&#39;purp_line&#39;, &#39;images/purp_line.png&#39;);</code></pre>
+
+<h4 id="toc_58">Create:</h4>
+
+<pre><code class="language-javascript">rock = game.add.sprite(105, 560, &#39;rock&#39;);
+//The physics can be removed from the rock, it is now unnecessary
+//game.physics.arcade.enable(rock);
+//rock.body.immovable = true;
+
+ledge = game.add.sprite(140, 595, &#39;line&#39;);
+game.physics.arcade.enable(ledge);
+ledge.body.immovable = true;</code></pre>
+
+<h4 id="toc_59">Update:</h4>
+
+<pre><code class="language-javascript">function update(){
+    //We change our collide interaction to now be between the frog and the ledge
+    game.physics.arcade.collide(frog, ledge);
+}</code></pre>
+
+<p>Now that we have our ledge positioned where we want it, we can switch from that offputting purple line to a nice clear line. This will give us the illusion that our froggy is on the rock.</p>
+
+<pre><code class="language-javascript">//We now load a blank line for our placeholder
+game.load.image(&#39;purp_line&#39;, &#39;images/blank_line.png&#39;);</code></pre>
+
+<h3 id="toc_60"><img src="public/images/fly.png" alt="fly"> &quot;See frog sit&quot;</h3>
+
+<h3 id="toc_61">&quot;Sit frog. Sit&quot; <img src="public/images/fly.png" alt="fly"></h3>
+
+<h2 id="toc_62">Chapter 6. The Cloud</h2>
+
+<p><img src="public/images/cloud.png" alt="cloud"></p>
+
+<p>Watching a frog sit on a rock is cool and all. But wouldn&#39;t it be cooler if we had something animated happening? And wouldn&#39;t the frog be cooler if it had a cloud in the sky blocking the sunlight? Let&#39;s kill two birds with one cloud!</p>
+
+<h4 id="toc_63">Preload:</h4>
+
+<pre><code class="language-javascript">game.load.image(&#39;cloud&#39;, &#39;images/cloud.png&#39;);</code></pre>
+
+<h4 id="toc_64">Create:</h4>
+
+<p>Where does it make sense to add this to our canvas?</p>
+
+<pre><code class="language-javascript">cloud = game.add.sprite(335, -50, &#39;cloud&#39;);
+game.physics.arcade.enable(cloud);
+//Give our cloud right (positive x-axis) velocity level of 5
+cloud.body.velocity.x = 5;</code></pre>
+
+<h3 id="toc_65"><img src="public/images/fly.png" alt="fly"> &quot;Now we&#39;re moving!&quot;</h3>
+
+<p><code>take a minute and play with the velocity of the cloud</code></p>
+
+<h2 id="toc_66">Chapter 7. The Bird</h2>
+
+<p><img src="public/images/bird.png" alt="bird"></p>
+
+<h4 id="toc_67">Preload:</h4>
+
+<pre><code class="language-javascript">game.load.spritesheet(&#39;bird&#39;, &#39;images/bird1.png&#39;, 84, 80);</code></pre>
+
+<h4 id="toc_68">Create:</h4>
+
+<pre><code class="language-javascript">//Add it
+birdie = game.add.sprite(750, -30, &#39;bird&#39;);
+//Resize it
+birdie.scale.x = game.rnd.realInRange(1.8, 1.8);
+birdie.scale.y = game.rnd.realInRange(1.8, 1.8);
+//Give it physics
+game.physics.arcade.enable(birdie);
+//Make it move
+birdie.body.velocity.x = -180;</code></pre>
+
+<h3 id="toc_69"><img src="public/images/fly.png" alt="fly"> &quot;Bye bye birdie!&quot;</h3>
+
+<h6 id="toc_70">How can we make it so that our bird stays on screen?</h6>
+
+<pre><code class="language-javascript">//Collide function between bird and world boundry will stop the bird in it&#39;s tracks
+  birdie.body.collideWorldBounds = true;</code></pre>
+
+<h3 id="toc_71"><img src="public/images/fly.png" alt="fly"> &quot;A bird in the bush&quot;</h3>
+
+<h6 id="toc_72">How about we keep the bird moving by adding a bounce attribute to it&#39;s physics?!</h6>
+
+<pre><code class="language-javascript">birdie.body.bounce.setTo(1, 1);</code></pre>
+
+<h3 id="toc_73"><img src="public/images/fly.png" alt="fly"> &quot;Bird is the word&quot;</h3>
+
+<p><code>take a minute to play around with the birds bounce setting</code></p>
+
+<h3 id="toc_74">&quot;Is this a hummingbird?&quot;</h3>
+
+<h6 id="toc_75">Our bird is gliding around backwards. And it isn&#39;t even flapping it&#39;s wing. We must fix this! But how?</h6>
+
+<h2 id="toc_76">Chapter 8. The Animation</h2>
+
+<p>When phaser preloads a spritesheet it automatically chops up all of its images based on the width you gave it. What results is an array of images that each have their own index value. The frog sprite is really simple. It only has two images, one with an open mouth and one closed. Let&#39;s set it up so that he can breathe. </p>
+
+<h4 id="toc_77">Create:</h4>
+
+<pre><code class="language-javascript">//Parameters for animation
+//(the animation variable name,
+//a new array of the sprite image indices you wish to cycle through,
+//the speed of the cycle,
+//and whether or not the cycle will repeat)
+frog.animations.add(&#39;openClose&#39;, [0, 1], 2, true);
+//How we call the animation
+frog.animations.play(&#39;openClose&#39;);</code></pre>
+
+<h3 id="toc_78"><img src="public/images/fly.png" alt="fly"> &quot;See frog breathe&quot;</h3>
+
+<h6 id="toc_79">Now for our bird</h6>
+
+<p>Lets add a simple left animation for our bird. The bird is a bit more complex, having way more than two images.</p>
+
+<p><img src="public/images/bird1.png" alt="bird sprite"></p>
+
+<pre><code class="language-javascript">//The first three images of our bird sprite are facing due left
+birdie.animations.add(&#39;left&#39;, [0, 1, 2], 6, true);
+birdie.animations.play(&#39;left&#39;)</code></pre>
+
+<h3 id="toc_80"><img src="public/images/fly.png" alt="fly"> &quot;Lame duck&quot;</h3>
+
+<h6 id="toc_81">Do you see how the birds wing appears to jump from the bottom to the top every animation cycle? Perhaps it would be smoother if we repeated the middle image again at the end of the cycle.</h6>
+
+<pre><code class="language-javascript">//Adding image index 1 again in the loop
+birdie.animations.add(&#39;left&#39;, [0, 1, 2, 1], 6, true);</code></pre>
+
+<h3 id="toc_82"><img src="public/images/fly.png" alt="fly"> &quot;Smooth sailing&quot;</h3>
+
+<p><code>take a minute to play around with the bird animation</code></p>
+
+<h6 id="toc_83">Now let&#39;s get the bird to fly to the right when it&#39;s moving to the right.</h6>
+
+<h4 id="toc_84">Create:</h4>
+
+<pre><code class="language-javascript">birdie.animations.add(&#39;right&#39;, [9, 10, 11, 10], 6, true);</code></pre>
+
+<p>Now for the hard part. We want to have our bird animate depending on which way it is travelling. To measure it&#39;s trajectory we can actually use the velocity that it is travelling in. Remember when we added a x-velocity of -180 to our bird? Well every time that it is bouncing off of the wall at (1, 1) it is reversing it&#39;s velocity. Meaning that it goes from -180 to 180 and back. We can create conditionals that measure this and play the correct animations accordingly.</p>
+
+<h4 id="toc_85">Update:</h4>
+
+<pre><code class="language-javascript">if (birdie.body.velocity.x &gt;= 180){
+    birdie.animations.play(&#39;right&#39;)
+} else {
+    birdie.animations.play(&#39;left&#39;)
+}</code></pre>
+
+<h3 id="toc_86"><img src="public/images/fly.png" alt="fly"> &quot;Them crooked vultures&quot;</h3>
+
+<h6 id="toc_87">&quot;Hey wait? This is a game right? How come I can&#39;t play anything yet?&quot;</h6>
+
+<h2 id="toc_88">Chapter 9. The Controls</h2>
+
+<p>You can set up any keys or mouse clicks as controls in Phaser. For now we will just set up the direction keys.</p>
+
+<h4 id="toc_89">Create:</h4>
+
+<pre><code class="language-javascript">//This will make up,down,left,and right live our keyboard
+cursors = game.input.keyboard.createCursorKeys();</code></pre>
+
+<p>Now we can use these controls in our update function.</p>
+
+<h4 id="toc_90">Update:</h4>
+
+<pre><code class="language-javascript">//.isDown is checking if a key &quot;is (pressed) down&quot;
+if (cursors.left.isDown) {
+    birdie.body.velocity.x = -180;
+} else if (cursors.right.isDown) {
+    birdie.body.velocity.x = 180
+}</code></pre>
+
+<h3 id="toc_91"><img src="public/images/fly.png" alt="fly"> &quot;Dance puppet. Dance!&quot;</h3>
+
+<h2 id="toc_92">Chapter 10. Putting it all together</h2>
+
+<p>Let&#39;s make our bird fully animated and controllable. Replace the code we have made for our bird animations and controls with the following code:</p>
+
+<h4 id="toc_93">Create:</h4>
+
+<pre><code class="language-javascript">birdie.animations.add(&#39;left&#39;, [0, 1, 2, 1], 6, true);
+birdie.animations.add(&#39;right&#39;, [9, 10, 11, 10], 6, true);
+birdie.animations.add(&#39;down&#39;, [18, 19, 20, 19], 6, true);
+birdie.animations.add(&#39;left_down&#39;, [6, 7, 8, 7], 6, true);
+birdie.animations.add(&#39;right_down&#39;, [15, 16, 17, 16], 6, true);
+birdie.animations.add(&#39;up&#39;, [21, 22, 23, 22], 6, true);
+birdie.animations.add(&#39;left_up&#39;, [3, 4, 5, 4], 6, true);
+birdie.animations.add(&#39;right_up&#39;, [12, 13, 14, 13], 6, true);</code></pre>
+
+<h4 id="toc_94">Update:</h4>
+
+<p>adding animations</p>
+
+<pre><code class="language-javascript">//animations
+if (birdie.body.velocity.x &gt;= 180 &amp;&amp; birdie.body.velocity.y &gt;= 180) {
+        birdie.animations.play(&#39;right_down&#39;)
+} else if (birdie.body.velocity.x &lt;= -180 &amp;&amp; birdie.body.velocity.y &gt;= 180) {
+    birdie.animations.play(&#39;left_down&#39;)
+} else if (birdie.body.velocity.x &gt;= 180 &amp;&amp; birdie.body.velocity.y &lt;= -180) {
+    birdie.animations.play(&#39;right_up&#39;)
+} else if (birdie.body.velocity.x &lt;= -180 &amp;&amp; birdie.body.velocity.y &lt;= -180) {
+    birdie.animations.play(&#39;left_up&#39;)
+} else if (birdie.body.velocity.x &gt;= 140) {
+    birdie.animations.play(&#39;right&#39;)
+} else if (birdie.body.velocity.x &lt;= -140) {
+    birdie.animations.play(&#39;left&#39;)
+} else if (birdie.body.velocity.y &gt; 0 &amp;&amp; (birdie.body.velocity.x &lt; 140 &amp;&amp; birdie.body.velocity.x &gt; -140)) {
+    if (birdie.body.velocity.y &lt; 600) {
+        birdie.animations.play(&#39;down&#39;)
+    } else {
+        birdie.animations.play(&#39;fall&#39;)
+    }
+}
+else if (birdie.body.velocity.y &lt; 0 &amp;&amp; (birdie.body.velocity.x &lt; 140 &amp;&amp; birdie.body.velocity.x &gt; -140)) {
+    birdie.animations.play(&#39;up&#39;)
+}</code></pre>
+
+<p>adding controls</p>
+
+<pre><code class="language-javascript">if (cursors.up.isDown) {
+    if (cursors.left.isDown) {
+
+        birdie.body.velocity.y = -180;
+        birdie.body.velocity.x = -180;
+
+    } else if (cursors.right.isDown) {
+
+        birdie.body.velocity.y = -180;
+        birdie.body.velocity.x = 180;
+
+    } else {
+
+        birdie.body.velocity.y = -180;
+        birdie.body.velocity.x *= .99;
+    }
+
+  } else if (cursors.down.isDown) {
+
+      if (cursors.left.isDown) {
+
+          birdie.body.velocity.y = 180;
+          birdie.body.velocity.x = -180;
+
+      } else if (cursors.right.isDown) {
+
+          birdie.body.velocity.y = 180;
+          birdie.body.velocity.x = 180;
+
+      } else {
+          birdie.body.velocity.y = 180;
+          birdie.body.velocity.x *= .99;
+      }
+
+  } else if (cursors.left.isDown) {
+      birdie.body.velocity.x = -180;
+      birdie.body.velocity.y *= .5;
+
+  } else if (cursors.right.isDown) {
+      birdie.body.velocity.x = 180;
+      birdie.body.velocity.y *= .5;
+  }</code></pre>
+
+<p><img src="public/images/fly.png" alt="fly"></p>
+
+<p><br></p>
+
+<p><br></p>
+
+<h2 id="toc_95">References</h2>
+
+<p>Check out <a href="http://phaser.io">phaser.io</a> to see some cool examples of what you can make using Phaser.</p>
+
+<p>Also check out <a href="http://http://rickrampage.herokuapp.com/">Rick Rampage</a>  (<a href="https://github.com/cptnmrgn/rick_rampage">github</a>) and <a href="http://abroccoli.github.io/first-phaser-final/">Wizurds</a> (<a href="https://github.com/abroccoli/first-phaser-final">github</a>), two other phaser games created by GA WDI students.</p>
+
+<h2 id="toc_96">Reincarnage</h2>
+
+<p>As seen at <a href="http://www.eventbrite.com/e/nyc-games-forum-august-demo-night-tickets-12470538717">NYC Games Forum: August Demo Night &#39;15</a></p>
+
+<p>View the Project 3 code on <a href="https://github.com/keyanbagheri/reincarnage">Github</a></p>
+
+<p>Created by: <a href="https://github.com/keyanbagheri">Keyan Bagheri</a> &amp; <a href="https://github.com/benticsay">Ben Ticsay</a></p>
+
+<p>Illustrations by: <a href="http://www.kathygeisel.com/">Kathy Geisel</a></p>
+
+<p><br></p>
+
+<p><br></p>
+
+<p><img src="public/images/fly.png" alt="fly"> <code>Notes by: Keyan Bagheri - 06/30/2015</code><img src="public/images/fly.png" alt="fly"> </p>
+
+<script type="text/javascript">
+self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{};var Prism=function(){var e=/\blang(?:uage)?-(?!\*)(\w+)\b/i,t=self.Prism={util:{encode:function(e){return e instanceof n?new n(e.type,t.util.encode(e.content),e.alias):"Array"===t.util.type(e)?e.map(t.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},clone:function(e){var n=t.util.type(e);switch(n){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=t.util.clone(e[r]));return a;case"Array":return e.map(function(e){return t.util.clone(e)})}return e}},languages:{extend:function(e,n){var a=t.util.clone(t.languages[e]);for(var r in n)a[r]=n[r];return a},insertBefore:function(e,n,a,r){r=r||t.languages;var i=r[e];if(2==arguments.length){a=arguments[1];for(var l in a)a.hasOwnProperty(l)&&(i[l]=a[l]);return i}var s={};for(var o in i)if(i.hasOwnProperty(o)){if(o==n)for(var l in a)a.hasOwnProperty(l)&&(s[l]=a[l]);s[o]=i[o]}return t.languages.DFS(t.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=s)}),r[e]=s},DFS:function(e,n,a){for(var r in e)e.hasOwnProperty(r)&&(n.call(e,r,e[r],a||r),"Object"===t.util.type(e[r])?t.languages.DFS(e[r],n):"Array"===t.util.type(e[r])&&t.languages.DFS(e[r],n,r))}},highlightAll:function(e,n){for(var a,r=document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'),i=0;a=r[i++];)t.highlightElement(a,e===!0,n)},highlightElement:function(a,r,i){for(var l,s,o=a;o&&!e.test(o.className);)o=o.parentNode;if(o&&(l=(o.className.match(e)||[,""])[1],s=t.languages[l]),a.className=a.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=a.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l),s){var u=a.textContent;if(u){u=u.replace(/^(?:\r?\n|\r)/,"");var g={element:a,language:l,grammar:s,code:u};if(t.hooks.run("before-highlight",g),r&&self.Worker){var c=new Worker(t.filename);c.onmessage=function(e){g.highlightedCode=n.stringify(JSON.parse(e.data),l),t.hooks.run("before-insert",g),g.element.innerHTML=g.highlightedCode,i&&i.call(g.element),t.hooks.run("after-highlight",g)},c.postMessage(JSON.stringify({language:g.language,code:g.code}))}else g.highlightedCode=t.highlight(g.code,g.grammar,g.language),t.hooks.run("before-insert",g),g.element.innerHTML=g.highlightedCode,i&&i.call(a),t.hooks.run("after-highlight",g)}}},highlight:function(e,a,r){var i=t.tokenize(e,a);return n.stringify(t.util.encode(i),r)},tokenize:function(e,n){var a=t.Token,r=[e],i=n.rest;if(i){for(var l in i)n[l]=i[l];delete n.rest}e:for(var l in n)if(n.hasOwnProperty(l)&&n[l]){var s=n[l];s="Array"===t.util.type(s)?s:[s];for(var o=0;o<s.length;++o){var u=s[o],g=u.inside,c=!!u.lookbehind,f=0,h=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var d=r[p];if(r.length>e.length)break e;if(!(d instanceof a)){u.lastIndex=0;var m=u.exec(d);if(m){c&&(f=m[1].length);var y=m.index-1+f,m=m[0].slice(f),v=m.length,k=y+v,b=d.slice(0,y+1),w=d.slice(k+1),N=[p,1];b&&N.push(b);var O=new a(l,g?t.tokenize(m,g):m,h);N.push(O),w&&N.push(w),Array.prototype.splice.apply(r,N)}}}}}return r},hooks:{all:{},add:function(e,n){var a=t.hooks.all;a[e]=a[e]||[],a[e].push(n)},run:function(e,n){var a=t.hooks.all[e];if(a&&a.length)for(var r,i=0;r=a[i++];)r(n)}}},n=t.Token=function(e,t,n){this.type=e,this.content=t,this.alias=n};if(n.stringify=function(e,a,r){if("string"==typeof e)return e;if("Array"===t.util.type(e))return e.map(function(t){return n.stringify(t,a,e)}).join("");var i={type:e.type,content:n.stringify(e.content,a,r),tag:"span",classes:["token",e.type],attributes:{},language:a,parent:r};if("comment"==i.type&&(i.attributes.spellcheck="true"),e.alias){var l="Array"===t.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(i.classes,l)}t.hooks.run("wrap",i);var s="";for(var o in i.attributes)s+=o+'="'+(i.attributes[o]||"")+'"';return"<"+i.tag+' class="'+i.classes.join(" ")+'" '+s+">"+i.content+"</"+i.tag+">"},!self.document)return self.addEventListener?(self.addEventListener("message",function(e){var n=JSON.parse(e.data),a=n.language,r=n.code;self.postMessage(JSON.stringify(t.util.encode(t.tokenize(r,t.languages[a])))),self.close()},!1),self.Prism):self.Prism;var a=document.getElementsByTagName("script");return a=a[a.length-1],a&&(t.filename=a.src,document.addEventListener&&!a.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",t.highlightAll)),self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism);
+</script>
+<script type="text/javascript">
+Prism.languages.clike={comment:[{pattern:/(^|[^\\])\/\*[\w\W]*?\*\//,lookbehind:!0},{pattern:/(^|[^\\:])\/\/.*/,lookbehind:!0}],string:/("|')(\\[\s\S]|(?!\1)[^\\\r\n])*\1/,"class-name":{pattern:/((?:(?:class|interface|extends|implements|trait|instanceof|new)\s+)|(?:catch\s+\())[a-z0-9_\.\\]+/i,lookbehind:!0,inside:{punctuation:/(\.|\\)/}},keyword:/\b(if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,"boolean":/\b(true|false)\b/,"function":{pattern:/[a-z0-9_]+\(/i,inside:{punctuation:/\(/}},number:/\b-?(0x[\dA-Fa-f]+|\d*\.?\d+([Ee]-?\d+)?)\b/,operator:/[-+]{1,2}|!|<=?|>=?|={1,3}|&{1,2}|\|?\||\?|\*|\/|~|\^|%/,ignore:/&(lt|gt|amp);/i,punctuation:/[{}[\];(),.:]/};
+</script>
+<script type="text/javascript">
+Prism.languages.javascript=Prism.languages.extend("clike",{keyword:/\b(as|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|false|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|true|try|typeof|var|void|while|with|yield)\b/,number:/\b-?(0x[\dA-Fa-f]+|0b[01]+|0o[0-7]+|\d*\.?\d+([Ee][+-]?\d+)?|NaN|Infinity)\b/,"function":/(?!\d)[a-z0-9_$]+(?=\()/i}),Prism.languages.insertBefore("javascript","keyword",{regex:{pattern:/(^|[^/])\/(?!\/)(\[.+?]|\\.|[^/\\\r\n])+\/[gimyu]{0,5}(?=\s*($|[\r\n,.;})]))/,lookbehind:!0}}),Prism.languages.insertBefore("javascript","class-name",{"template-string":{pattern:/`(?:\\`|\\?[^`])*`/,inside:{interpolation:{pattern:/\$\{[^}]+\}/,inside:{"interpolation-punctuation":{pattern:/^\$\{|\}$/,alias:"punctuation"},rest:Prism.languages.javascript}},string:/[\s\S]+/}}}),Prism.languages.markup&&Prism.languages.insertBefore("markup","tag",{script:{pattern:/<script[\w\W]*?>[\w\W]*?<\/script>/i,inside:{tag:{pattern:/<script[\w\W]*?>|<\/script>/i,inside:Prism.languages.markup.tag.inside},rest:Prism.languages.javascript},alias:"language-javascript"}});
+</script>
+</body>
+
+</html>
