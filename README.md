@@ -657,7 +657,7 @@ As seen at [NYC Games Forum: August Demo Night '15](http://www.eventbrite.com/e/
 
 View the code on [Github](https://github.com/keyanbagheri/reincarnage)
 
-Created by: [Keyan Bagheri](https://github.com/keyanbagheri) & [Ben Ticsay](https://github.com/benticsay)
+Created by: [Morrison Key](https://github.com/morrison-key) & [Ben Ticsay](https://github.com/benticsay)
 
 Illustrations by: [Kathy Geisel](http://www.kathygeisel.com/)
 
