@@ -665,4 +665,4 @@ Illustrations by: [Kathy Geisel](http://www.kathygeisel.com/)
 
 <br>
 
-![fly](public/images/fly.png) Tutorial by: [Keyan Bagheri](http://keyanbagheri.com) - 7/1/2015![fly](public/images/fly.png) 
+![fly](public/images/fly.png) Tutorial by: [Morrison Key](http://morrisonkey.com) - 7/1/2015![fly](public/images/fly.png) 
